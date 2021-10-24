@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+    <h2>Login Form</h2>
+    <form>
+        <label style="text-align: center; margin-left: 80px; font-size: larger; font-family: sans-serif;">Name</label>
+        <input class="box" type='text' name="name" placeholder="enter your name here" required minlength="3" pattern="[a-Z]" />
+     </br>
+     <label style="text-align: center; margin-left: 80px; font-size: larger; font-family: sans-serif;">Passward</label>
+     <input class="box" type="password" placeholder="Enter your passward" required minlength="5" pattern="[a-Z]"/></br>
+    <!--Select tag-->
+
+    
+        <label style="text-align: center; margin-left: 80px; font-size: larger; font-family: sans-serif;">E-mail</label>
+        <input class="box" type="email" pattern=".+@gmail.com" required/></br>
+
+    
+    <input class="btn" type="submit"/>
+    </form>
+    </div>
+    </div>
+    <label for="selector" style="color: coral; font-size: larger;font-family: sans-serif;border-bottom: 3px solid #4caf50; ">Select the product  :</label>
+    <!--  it tells the level is bound to or used by which "form" element  -->
+    
+    <select id="selector">
+        <option value="Car">Car</option> <!--Value="car" is for java script to return some value -->
+        <option selected>Bike</option>
+        <option>Bicycle</option>
+        <option>Ferrari</option>
+    </select></br>
+    
+</body>
+</html>
